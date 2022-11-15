@@ -1,0 +1,203 @@
+body {
+    background: #121212;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+
+#app {
+
+    background: #121212;
+    width: 50%;
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: grid;
+    height: 50%;
+    color: #8bb0d6;
+    justify-content: center;
+    grid-gap: 0.5vh;
+    font-size: 20px;
+}
+
+/* Weather Journal App Custom Font */
+.holder.headline {
+    font-family: 'Satisfy', cursive;
+    font-size: 60px;
+    color: #95c4ea;
+}
+
+.holder.entry {
+    border-radius: 100px;
+    padding: 2em;
+}
+
+.entry {
+    background: #373737;
+    color: white;
+}
+
+#entryHolder {
+    text-align: center;
+}
+
+.headline {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.title {
+    padding: 10px;
+    text-align: center;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+    display: block;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+input {
+    border-radius: 25px;
+    text-align: center;
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: #eeeeee;
+    color: #0a0a0a;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+}
+
+.cntr_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cntr_btn button {
+    color: white;
+    display: block;
+    border-radius: 25px;
+    width: 50%;
+    height: 40px;
+    background: #546da3;
+    font-size: 24px;
+    font-family: 'Satisfy', cursive;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #2d3e62;
+    color: white;
+
+    animation: shake 0.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+h1 {
+    font-size: 36px;
+}
+
+textarea {
+    background: #eeeeee;
+    color: #0a0a0a;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline-color: #22b2da;
+
+}
+
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+/* Style for Placeholder Text*/
+::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #c0c0c0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #c0c0c0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #c0c0c0;
+    font-family: 'Roboto Mono', monospace;
+}

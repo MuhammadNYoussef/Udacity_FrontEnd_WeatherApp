@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Udacity - Weather Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+
+<body>
+    <div id="app">
+        <div class="holder headline">
+            Weather Journal App
+        </div>
+        <div class="holder zip">
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" placeholder="Enter Your ZIP Code">
+        </div>
+        <div class="holder feel">
+            <label for="feelings">Your Feeling:</label>
+            <input type="text" class="myInput" id="feelings" placeholder="How Are You Feeling Today?">
+            <!-- <textarea class="myInput" id="feelings" contenteditable="true" placeholder="How Are You Feeling Today?"
+                rows="9" cols="50"></textarea> -->
+
+        </div>
+
+        <div class="cntr_btn">
+            <button id="generate" type="submit">Process Data</button>
+        </div>
+
+        <div class="holder entry">
+            <div class="title"><u>Most Recent Entry</u></div>
+            <div id="entryHolder">
+                <div id="temp"></div>
+                <div id="content"></div>
+                <div id="date"></div>
+                <hr>
+                <div id="zipcode"></div>
+                <div id="country"></div>
+                <div id="weather_description"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/app.js" type="text/javascript"></script>
+
+</body>
+
+</html>
