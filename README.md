@@ -30,6 +30,7 @@
 	`npm i cors` `npm i express` `npm i path` `npm i body-parser`
 4. Run the server
 	`node server/server.js`
+<br><hr><br>
   
 ####  <ins>3. References:</ins>
 - https://www.w3schools.com/
