@@ -2,7 +2,7 @@
 const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?zip='
 
 // Personal API
-const api = '9baf302e89ef5a9b61ef754f6756c8d9'
+const api = 'API_KEY'
 
 // API Extensions - Metric for Celsius.
 const apiKey = `&appid=${api}&units=metric`
